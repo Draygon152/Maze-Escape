@@ -28,9 +28,9 @@ public class MazeDataGenerator {
 
                 // Checks if "tile" coordinates are even, to assign to every other "tile"
                 // Also checks against placement threshold to see if this "tile" should be randomly skipped
-                else if ((row % 2 == 0) && (col % 2 == 0)) { 
+                else if ((row % 2 == 0) && (col % 2 == 0)) {
+                    // Assigns wall to current cell and randomly chosen adjacent cell if not skipped
                     if (Random.value > placementThreshold) {
-                        // Assigns wall to current cell and randomly chosen adjacent cell if not skipped
                         maze[row, col] = 1;
 
                         // Ternary operators used to randomly add 0, 1, or -1 to array index, allowing
