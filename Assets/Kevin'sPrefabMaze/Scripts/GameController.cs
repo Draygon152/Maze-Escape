@@ -8,8 +8,6 @@ public class GameController : MonoBehaviour {
     // Player object using FpsMovement script
     [SerializeField] private FpsMovement player;
 
-    // Variable to hold timer object
-    [SerializeField] private UICountdown timer;
 
     // MazeConstructor generator object, to be used when game starts
     private MazeConstructor generator;
@@ -18,6 +16,7 @@ public class GameController : MonoBehaviour {
     // starts maze generation and game
     void Start() {
         generator = GetComponent<MazeConstructor>();
+        Cursor.visible = false;
 
         StartNewMaze();
     }
