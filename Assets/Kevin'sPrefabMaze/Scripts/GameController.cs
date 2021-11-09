@@ -39,14 +39,13 @@ public class GameController : MonoBehaviour {
     }
 
 
-    // Checks if player is active, updates time. If time runs out, player deactivates and
-    // starts new game
+    // Checks if player is still active
     void Update() {
         if (!player.enabled) { return; }
     }
 
 
-    // Callback functions, passed to TriggerEventRouter in MazeConstructor
+    // Callback function, passed to TriggerEventRouter in MazeConstructor
     // Triggered when goal is found and collided with
     private void OnGoalTrigger(GameObject trigger, GameObject other) {
         Debug.Log("Finished!");

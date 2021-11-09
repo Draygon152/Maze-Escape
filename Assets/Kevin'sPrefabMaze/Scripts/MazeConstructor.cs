@@ -5,7 +5,7 @@ public class MazeConstructor : MonoBehaviour
     // Fields available in Inspector
     public bool showDebug;  // Toggles debug displays
 
-    // Materials for generated models, [SerializeField] attribute displays a field in the Inspector even if variable is private
+    // Materials for generated meshes, [SerializeField] attribute displays a field in the Inspector even if variable is private
     [SerializeField] private Material floorMat;
     [SerializeField] private Material wallMat;
     [SerializeField] private Material goalMat;
@@ -65,7 +65,7 @@ public class MazeConstructor : MonoBehaviour
     }
 
 
-    // Not used in code, specifically for Unity
+    // Not used in code, specifically for Unity debug
     void OnGUI() {
         // Only display if debug displays are enabled
         if (!showDebug) return;
