@@ -9,6 +9,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(CharacterController))]
 
@@ -32,13 +33,16 @@ public class FpsMovement : MonoBehaviour {
 
     void Start() {
         charController = GetComponent<CharacterController>();
+        Cursor.visible = false;
     }
 
 
     void Update() {
+        
         MoveCharacter();
         RotateCharacter();
         RotateCamera();
+        menu();
     }
 
 
@@ -67,5 +71,12 @@ public class FpsMovement : MonoBehaviour {
         rotationVert = Mathf.Clamp(rotationVert, minimumVert, maximumVert);
 
         headCam.transform.localEulerAngles = new Vector3(rotationVert, headCam.transform.localEulerAngles.y, 0);
+    }
+
+    private void menu()
+    {
+        if(Input.GetKeyDown(KeyCode.B))
+            SceneManager.LoadScene("WinScene");
+            Cursor.visible = true;
     }
 }

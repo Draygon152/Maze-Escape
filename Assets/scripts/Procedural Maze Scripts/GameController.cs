@@ -56,7 +56,7 @@ public class GameController : MonoBehaviour {
         Destroy(trigger);
         
         audioSource.PlayOneShot(success);
-        Invoke("LoadSceneWin",3f);
+        Invoke("LoadSceneWin",2f);
     }
     
 
@@ -72,6 +72,7 @@ public class GameController : MonoBehaviour {
         yield return new WaitForSeconds(3);
 
         SceneManager.LoadScene("WinScene");
+        Cursor.visible = true;
         generator.DisposeOldMaze();
         player.enabled = false;
     }
