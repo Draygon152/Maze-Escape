@@ -1,13 +1,15 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(MazeConstructor))]
 
 public class GameController : MonoBehaviour {
     // Player object using FpsMovement script
     [SerializeField] private FpsMovement player;
-
+    [SerializeField] AudioClip success;  //play auidoclip
+    AudioSource audioSource;
 
     // MazeConstructor generator object, to be used when game starts
     private MazeConstructor generator;
@@ -15,9 +17,10 @@ public class GameController : MonoBehaviour {
     // MazeConstructor initialized, sets up for new game to begin and then
     // starts maze generation and game
     void Start() {
+        audioSource = GetComponent<AudioSource>();
         generator = GetComponent<MazeConstructor>();
         Cursor.visible = false;
-
+        
         StartNewMaze();
     }
 
@@ -49,13 +52,22 @@ public class GameController : MonoBehaviour {
     // Triggered when goal is found and collided with
     private void OnGoalTrigger(GameObject trigger, GameObject other) {
         Debug.Log("Finished!");
-
+        
         Destroy(trigger);
-
+        
         // Replace with scene switch to victory before cleanup
-        player.enabled = false;
-
-        StartCoroutine(DelayedEnd());
+        player.enabled = false; // kind of awkward of being freezed for 3 sec
+        //StartCoroutine(DelayedEnd()); // edit to switch scene
+        audioSource.PlayOneShot(success);
+        Invoke("LoadSceneWin",3f);
+    }
+    
+    void LoadSceneWin()
+    {
+        // load the win scene
+        
+        SceneManager.LoadScene("scene win");
+        generator.DisposeOldMaze();
     }
 
 
