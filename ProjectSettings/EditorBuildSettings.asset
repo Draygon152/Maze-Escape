@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/scene win.unity
+    path: Assets/Scenes/WinScene.unity
     guid: d7eb9587afa5d9546abf237e7d5d6662
   - enabled: 1
-    path: Assets/XiaoFan scene/scene loss.unity
+    path: Assets/scenes/LossScene.unity
     guid: 89611996b2369ab44a1fac35a6c2c4d9
   m_configObjects: {}
