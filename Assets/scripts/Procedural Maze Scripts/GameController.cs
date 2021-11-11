@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour {
     // Player object using FpsMovement script
     [SerializeField] private FpsMovement player;
-    [SerializeField] AudioClip success;  //play auidoclip
+    [SerializeField] AudioClip success; // Audio clip played upon goal being reached
     AudioSource audioSource;
 
     // MazeConstructor generator object, to be used when game starts
