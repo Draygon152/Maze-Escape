@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class FlashLight : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private AudioSource flashlightSound;
     public bool on = true;
 
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.F))
+    void Update() {
+        if(Input.GetKeyDown(KeyCode.F)) {
             on = !on;
+            flashlightSound.Play();
+        }
+            
         if(on)
             GetComponent<Light>().enabled = true;
         else if(!on)
