@@ -7,6 +7,7 @@ public class RG_Maze : MonoBehaviour
     public void RandomGenerate()
     {
         SceneManager.LoadScene("TestScene");
+        
     }
 
     public void EasyS()
