@@ -37,3 +37,6 @@ sysinfo.txt
 
 # Annoying log files
 *.log
+
+# Ignore User-specific settings
+UserSettings/EditorUserSettings.asset
