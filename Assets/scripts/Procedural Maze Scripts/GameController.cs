@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(MazeConstructor))]
@@ -8,8 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour {
     // Player object using FpsMovement script
     [SerializeField] private FpsMovement player;
-    [SerializeField] AudioClip success;  //play auidoclip
-    AudioSource audioSource;
+    [SerializeField] private AudioSource victorySound; // AudioSource object containing victory sound effect to be played
 
     // MazeConstructor generator object, to be used when game starts
     private MazeConstructor generator;
@@ -17,10 +15,8 @@ public class GameController : MonoBehaviour {
     // MazeConstructor initialized, sets up for new game to begin and then
     // starts maze generation and game
     void Start() {
-        audioSource = GetComponent<AudioSource>();
         generator = GetComponent<MazeConstructor>();
-        Cursor.visible = false;
-        Debug.Log("Start the Procedure Maze!");
+        
         StartNewMaze();
     }
 
@@ -54,9 +50,9 @@ public class GameController : MonoBehaviour {
         Debug.Log("Finished!");
         
         Destroy(trigger);
-        
-        audioSource.PlayOneShot(success);
-        Invoke("LoadSceneWin",1f);
+
+        victorySound.Play();
+        Invoke("LoadSceneWin",2f);
     }
     
 
@@ -69,10 +65,11 @@ public class GameController : MonoBehaviour {
 
     // Coroutine to delay for 3 seconds
     IEnumerator DelayedEnd() {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
 
         SceneManager.LoadScene("WinScene");
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
         generator.DisposeOldMaze();
         player.enabled = false;
     }
