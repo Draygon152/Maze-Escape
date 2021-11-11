@@ -20,7 +20,7 @@ public class GameController : MonoBehaviour {
         audioSource = GetComponent<AudioSource>();
         generator = GetComponent<MazeConstructor>();
         Cursor.visible = false;
-        
+        Debug.Log("Start the Procedure Maze!");
         StartNewMaze();
     }
 
@@ -56,7 +56,7 @@ public class GameController : MonoBehaviour {
         Destroy(trigger);
         
         audioSource.PlayOneShot(success);
-        Invoke("LoadSceneWin",2f);
+        Invoke("LoadSceneWin",1f);
     }
     
 
@@ -69,7 +69,7 @@ public class GameController : MonoBehaviour {
 
     // Coroutine to delay for 3 seconds
     IEnumerator DelayedEnd() {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
 
         SceneManager.LoadScene("WinScene");
         Cursor.visible = true;
