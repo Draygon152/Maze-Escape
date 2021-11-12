@@ -33,7 +33,7 @@ public class GameController : MonoBehaviour {
 
         // Places player in start of maze
         player.transform.position = new Vector3(x, y, z);
-
+        
         player.enabled = true;
     }
 

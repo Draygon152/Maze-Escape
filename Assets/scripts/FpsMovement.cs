@@ -73,7 +73,7 @@ public class FpsMovement : MonoBehaviour {
     }
 
     private void menu() {
-        SceneManager.LoadScene("WinScene");
+        SceneManager.LoadScene("MainMenu");
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
     }
