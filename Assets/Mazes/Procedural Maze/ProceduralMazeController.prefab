@@ -113,6 +113,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7409619846910513753, guid: 9950fd80f104fd94db6d0ae75f0409fd, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c9a993f914f94b643aa02689b40a7c55, type: 3}
     - target: {fileID: 7409619846910513754, guid: 9950fd80f104fd94db6d0ae75f0409fd, type: 3}
       propertyPath: m_Name
       value: VictorySound
