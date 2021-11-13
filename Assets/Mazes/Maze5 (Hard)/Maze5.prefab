@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5201130574912196186}
   - component: {fileID: 5201130574912196187}
   m_Layer: 0
-  m_Name: Maze5 (Hard)
+  m_Name: Maze5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showDebug: 1
-  floorMat: {fileID: 2100000, guid: 2019d743bc0984ba1b81150901d44455, type: 2}
-  wallMat: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  floorMat: {fileID: 2100000, guid: b6df9718aa8737b4e86604fe29878535, type: 2}
+  wallMat: {fileID: 2100000, guid: b6df9718aa8737b4e86604fe29878535, type: 2}
   goalMat: {fileID: 2100000, guid: 9faf55680ba643842a09f5bd3ab5d93b, type: 2}
 --- !u!114 &3016133593837804757
 MonoBehaviour:
@@ -61,7 +61,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3da1802dba4281246ad6026a2ae1ef74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   victorySound: {fileID: 4580268769540350889}
 --- !u!1001 &6432305559479628272
 PrefabInstance:
