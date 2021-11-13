@@ -4017,14 +4017,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Press Tab : Pause\Resume
-
-    Press B : New game
-
-    Press F : Flash
-    light
-
-    Press H : Close\Open help'
+  m_text: "Press Tab : Pause\\Resume\n   Press B : Return to Main Menu\n   Press
+    F : Flashlight\n   Press H : Close\\Open Help"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

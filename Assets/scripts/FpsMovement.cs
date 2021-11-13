@@ -3,7 +3,7 @@
  * released under MIT license
  * text of license https://opensource.org/licenses/MIT
  * 
- * Edited by Kevin Chao, 2021
+ * Modified and expanded by Kevin Chao, 2021
  */
 
 using UnityEngine;
@@ -72,9 +72,17 @@ public class FpsMovement : MonoBehaviour {
         headCam.transform.localEulerAngles = new Vector3(rotationVert, headCam.transform.localEulerAngles.y, 0);
     }
 
+
     private void menu() {
         SceneManager.LoadScene("MainMenu");
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
+    }
+
+
+    public float getVelocity() {
+        Vector3 horizontalVelocity = new Vector3(charController.velocity.x, 0, charController.velocity.z);
+
+        return horizontalVelocity.magnitude;
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
     // Player object using FpsMovement script
-    [SerializeField] private FpsMovement player;
+    private FpsMovement player;
     [SerializeField] private AudioSource victorySound; // AudioSource object containing victory sound effect to be played
 
     // MazeConstructor generator object, to be used when game starts
@@ -16,7 +16,8 @@ public class GameController : MonoBehaviour {
     // starts maze generation and game
     void Start() {
         generator = GetComponent<MazeConstructor>();
-        
+        player = GameObject.Find("Player Character").GetComponent<FpsMovement>();
+
         StartNewMaze();
     }
 
@@ -52,7 +53,7 @@ public class GameController : MonoBehaviour {
         Destroy(trigger);
 
         victorySound.Play();
-        Invoke("LoadSceneWin",2f);
+        Invoke("LoadSceneWin", 2f);
     }
     
 
@@ -70,6 +71,13 @@ public class GameController : MonoBehaviour {
         SceneManager.LoadScene("WinScene");
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
+        generator.DisposeOldMaze();
+        player.enabled = false;
+    }
+
+
+    // To be used ONLY whenever the procedural maze is quit from a menu, or if player loses
+    public void QuitMaze() {
         generator.DisposeOldMaze();
         player.enabled = false;
     }
