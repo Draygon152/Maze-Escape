@@ -1,7 +1,8 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 [RequireComponent(typeof(MazeConstructor))]
+
 
 public class GameController : MonoBehaviour {
     // Player object using FpsMovement script
@@ -20,6 +21,8 @@ public class GameController : MonoBehaviour {
     // Stores the number of goals that have been collected
     private uint score = 0;
 
+    bool goalReached = false;
+
 
     // MazeConstructor initialized, sets up for new game to begin and then
     // starts maze generation and game
@@ -27,6 +30,16 @@ public class GameController : MonoBehaviour {
         generator = GetComponent<MazeConstructor>();
         player = GameObject.Find("Player Character").GetComponent<FpsMovement>();
 
+        BeginMaze();
+    }
+
+
+    void Update() {
+        if (!player.enabled) return;
+    }
+
+
+    private void BeginMaze() {
         StartNewMaze();
     }
 
@@ -41,6 +54,8 @@ public class GameController : MonoBehaviour {
 
         // Places player in start of maze
         player.transform.position = new Vector3(x, y, z);
+
+        player.enabled = true;
     }
 
 
@@ -48,12 +63,13 @@ public class GameController : MonoBehaviour {
     // Callback function, passed to TriggerEventRouter in MazeConstructor
     // Triggered when goal is found and collided with
     private void OnGoalTrigger(GameObject trigger, GameObject other) {
+        player.enabled = false;
         Debug.Log("Finished!");
-        
-        Destroy(trigger);
-        // Play goal "get" sound
-        score++;
 
+        scoreIncrease.Play();
+        score++;
+        Destroy(trigger);
+        
         generator.DisposeOldMaze();
 
         rows += 2;

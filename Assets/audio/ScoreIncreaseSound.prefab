@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7409619846910513752}
   - component: {fileID: 7409619846910513753}
   m_Layer: 0
-  m_Name: VictorySound
+  m_Name: ScoreIncreaseSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eba2bd8d061afc748ad7ebb2fa0785c1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cbb17d4623401344587e697c61ed0328, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
