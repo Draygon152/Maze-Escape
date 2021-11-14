@@ -33,7 +33,6 @@ public class FpsMovement : MonoBehaviour {
         charController = GetComponent<CharacterController>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        Debug.Log("HELP");
     }
 
 

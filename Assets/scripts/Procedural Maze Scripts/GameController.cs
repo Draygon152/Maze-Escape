@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour {
     // Player object using FpsMovement script
     private FpsMovement player;
-    [SerializeField] private AudioSource victorySound; // AudioSource object containing victory sound effect to be played
+
+    // AudioSource object that plays sound when a "goal" is reached/collected
+    [SerializeField] private AudioSource scoreIncrease;
 
     // MazeConstructor generator object, to be used when game starts
     private MazeConstructor generator;
@@ -16,9 +18,13 @@ public class GameController : MonoBehaviour {
     private uint rows = 13;
     private uint cols = 15;
 
+    // Stores the number of goals that have been collected
+    private uint score = 0;
+
     // MazeConstructor initialized, sets up for new game to begin and then
     // starts maze generation and game
     void Start() {
+        Debug.Log("Test");
         generator = GetComponent<MazeConstructor>();
         player = GameObject.Find("Player Character").GetComponent<FpsMovement>();
 
@@ -36,14 +42,11 @@ public class GameController : MonoBehaviour {
 
         // Places player in start of maze
         player.transform.position = new Vector3(x, y, z);
-        
-        player.enabled = true;
     }
 
 
-    // Checks if player is still active
     void Update() {
-        if (!player.enabled) { return; }
+
     }
 
 
@@ -53,34 +56,14 @@ public class GameController : MonoBehaviour {
         Debug.Log("Finished!");
         
         Destroy(trigger);
+        // Play goal "get" sound
+        score++;
 
-        victorySound.Play();
-        Invoke("LoadSceneWin", 2f);
-    }
-    
-
-    void LoadSceneWin() {
-        // Call coroutine to delay loading winscene for 3 seconds, giving
-        // sound effect full time to play
-        StartCoroutine(DelayedEnd());
-    }
-
-
-    // Coroutine to delay for 3 seconds
-    IEnumerator DelayedEnd() {
-        yield return new WaitForSeconds(3);
-
-        SceneManager.LoadScene("WinScene");
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.Confined;
         generator.DisposeOldMaze();
-        player.enabled = false;
-    }
 
-
-    // To be used ONLY whenever the procedural maze is quit from a menu, or if player loses
-    public void QuitMaze() {
-        generator.DisposeOldMaze();
-        player.enabled = false;
+        rows += 4;
+        cols += 4;
+        StartNewMaze();
+        // Add timer reset/increase time limit code here
     }
 }

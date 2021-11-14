@@ -43,11 +43,6 @@ public class MazeConstructor : MonoBehaviour
 
     public void GenerateNewMaze(ref uint sizeRows, ref uint sizeCols,
                                 TriggerEventHandler goalCallback = null) {
-        if (sizeRows % 2 == 0 && sizeCols % 2 == 0) {
-            sizeRows += 1;
-            sizeCols += 1;
-        }
-
         // Generate maze data
         data = dataGenerator.FromDimensions(ref sizeRows, ref sizeCols);
 
