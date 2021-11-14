@@ -12,6 +12,10 @@ public class GameController : MonoBehaviour {
     // MazeConstructor generator object, to be used when game starts
     private MazeConstructor generator;
 
+    // Default maze generation size, increased each time player advances
+    private uint rows = 13;
+    private uint cols = 15;
+
     // MazeConstructor initialized, sets up for new game to begin and then
     // starts maze generation and game
     void Start() {
@@ -24,8 +28,6 @@ public class GameController : MonoBehaviour {
 
     // Generates new maze and instantiates player
     private void StartNewMaze() {
-        uint rows = 13;
-        uint cols = 15;
         generator.GenerateNewMaze(ref rows, ref cols, OnGoalTrigger);
 
         float x = generator.startCol * generator.hallWidth;
