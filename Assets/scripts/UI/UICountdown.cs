@@ -16,7 +16,7 @@ public class UICountdown : MonoBehaviour
     void Start() {
         player = GameObject.Find("Player Character").GetComponent<FpsMovement>();
         hasTimerStarted = false;
-        timeRemaining = 6000;
+        timeRemaining = 300;
     }
 
 

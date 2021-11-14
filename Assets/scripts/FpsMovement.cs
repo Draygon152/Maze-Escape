@@ -56,6 +56,7 @@ public class FpsMovement : MonoBehaviour {
         movement *= Time.deltaTime;
         movement = transform.TransformDirection(movement);
 
+        Physics.SyncTransforms();
         charController.Move(movement);
     }
 
