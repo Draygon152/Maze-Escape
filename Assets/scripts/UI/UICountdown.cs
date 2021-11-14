@@ -16,7 +16,7 @@ public class UICountdown : MonoBehaviour
     void Start() {
         player = GameObject.Find("Player Character").GetComponent<FpsMovement>();
         hasTimerStarted = false;
-        timeRemaining = 60;
+        timeRemaining = 6000;
     }
 
 
@@ -33,7 +33,7 @@ public class UICountdown : MonoBehaviour
         hasTimerStarted = true;
 
         // wait until the task timerTick has finished before running timerTick again
-        for (int i = 0; i < 60; i++) {
+        for (int i = 0; i < timeRemaining; i++) {
             await timerTick();
         }
 
@@ -51,7 +51,7 @@ public class UICountdown : MonoBehaviour
         }
 
         // update timeRemaining and UI timer
-        Debug.Log(timeRemaining);
+        // Debug.Log(timeRemaining);
         timeRemaining -= 1;
         gameObject.GetComponent<TextMeshProUGUI>().text = $"Time Remaining: {timeRemaining}";
     }

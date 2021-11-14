@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,10 +20,10 @@ public class GameController : MonoBehaviour {
     // Stores the number of goals that have been collected
     private uint score = 0;
 
+
     // MazeConstructor initialized, sets up for new game to begin and then
     // starts maze generation and game
     void Start() {
-        Debug.Log("Test");
         generator = GetComponent<MazeConstructor>();
         player = GameObject.Find("Player Character").GetComponent<FpsMovement>();
 
@@ -45,10 +44,6 @@ public class GameController : MonoBehaviour {
     }
 
 
-    void Update() {
-
-    }
-
 
     // Callback function, passed to TriggerEventRouter in MazeConstructor
     // Triggered when goal is found and collided with
@@ -61,9 +56,10 @@ public class GameController : MonoBehaviour {
 
         generator.DisposeOldMaze();
 
-        rows += 4;
-        cols += 4;
+        rows += 2;
+        cols += 2;
         StartNewMaze();
+
         // Add timer reset/increase time limit code here
     }
 }
