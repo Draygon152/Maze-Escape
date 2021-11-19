@@ -31,4 +31,9 @@ public class RG_Maze : MonoBehaviour
         Debug.Log("QUIT GAME!");
         Application.Quit();
     }
+
+    public void testforlight()
+    {
+        SceneManager.LoadScene("testForLight");
+    }
 }
