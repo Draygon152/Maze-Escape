@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class RG_Maze : MonoBehaviour
+public class MazeSelection : MonoBehaviour
 {
     public void RandomGenerate()
     {
