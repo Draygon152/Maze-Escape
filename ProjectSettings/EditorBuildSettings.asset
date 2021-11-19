@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MLScene1.unity
     guid: f2a00b25c2cba9b479625b12c4f130f0
   - enabled: 1
-    path: Assets/Scenes/TestScene.unity
+    path: Assets/scenes/TestScene.unity
     guid: 606533c340cd8e341bd6a6d3e17535e4
   - enabled: 1
     path: Assets/Scenes/EasyScene.unity
@@ -29,7 +29,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HardScene.unity
     guid: 8f2feda113fd6944bbd15ba8ddeed490
-  - enabled: 1
-    path: Assets/Scenes/test/testForLight.unity
-    guid: 2d8dda49b44aab9429da033591a8ff6e
   m_configObjects: {}
