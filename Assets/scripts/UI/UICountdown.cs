@@ -8,14 +8,14 @@ public class UICountdown : MonoBehaviour
     private FpsMovement player;
     private int timeRemaining;
 
-    bool hasTimerStarted;
+    bool timerStarted;
     float nextSecondEndTime;
 
 
     // Start is called before the first frame update
     void Start() {
         player = GameObject.Find("Player Character").GetComponent<FpsMovement>();
-        hasTimerStarted = false;
+        timerStarted = false;
         timeRemaining = 300;
     }
 
@@ -24,18 +24,17 @@ public class UICountdown : MonoBehaviour
     void Update() {
         // once player moves or looks around and timer hasn't started yet, start timer
         // without !hasTimerStarted, BeginCountdown would be called every time player moves after not moving
-        if (!hasTimerStarted && player.getVelocity() > 0)
+        if (!timerStarted && player.getVelocity() > 0)
             BeginCountdown();
     }
 
 
     async void BeginCountdown() {
-        hasTimerStarted = true;
+        timerStarted = true;
 
         // wait until the task timerTick has finished before running timerTick again
-        for (int i = 0; i < timeRemaining; i++) {
+        while (timeRemaining != 0)
             await timerTick();
-        }
 
         SceneManager.LoadScene("LossScene");
         Cursor.visible = true;
@@ -46,9 +45,8 @@ public class UICountdown : MonoBehaviour
     async Task timerTick() {
         // task is not complete until 1 second has passed
         nextSecondEndTime = Time.time + 1;
-        while (Time.time < nextSecondEndTime) {
+        while (Time.time < nextSecondEndTime)
             await Task.Yield();
-        }
 
         // update timeRemaining and UI timer
         // Debug.Log(timeRemaining);

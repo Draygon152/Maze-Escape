@@ -287,6 +287,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 145
       objectReference: {fileID: 0}
+    - target: {fileID: 2354784085293102348, guid: be834dec2b4d6a949a120b33eb165aeb, type: 3}
+      propertyPath: m_text
+      value: 'Time Remaining: 300'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be834dec2b4d6a949a120b33eb165aeb, type: 3}
 --- !u!1001 &525190057
@@ -395,6 +399,38 @@ PrefabInstance:
     - target: {fileID: 5340727164775789435, guid: b1b376e1a4f1bc742badec4d66f24987, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135664379317938714, guid: b1b376e1a4f1bc742badec4d66f24987, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135664379317938714, guid: b1b376e1a4f1bc742badec4d66f24987, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135664379317938714, guid: b1b376e1a4f1bc742badec4d66f24987, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: 70f70b617cbff1b45a180846cc01d66b, type: 3}
+    - target: {fileID: 9135664379317938714, guid: b1b376e1a4f1bc742badec4d66f24987, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135664379317938714, guid: b1b376e1a4f1bc742badec4d66f24987, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_name
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135664379317938714, guid: b1b376e1a4f1bc742badec4d66f24987, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135664379317938714, guid: b1b376e1a4f1bc742badec4d66f24987, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: PauseMenu.disableCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135664379317938714, guid: b1b376e1a4f1bc742badec4d66f24987, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9135664379949655604, guid: b1b376e1a4f1bc742badec4d66f24987, type: 3}
       propertyPath: helpUI
