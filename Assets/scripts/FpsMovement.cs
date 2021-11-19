@@ -40,6 +40,8 @@ public class FpsMovement : MonoBehaviour {
         MoveCharacter();
         RotateCharacter();
         RotateCamera();
+        if (Input.GetKeyDown(KeyCode.B))
+            menu();
     }
 
 
@@ -69,6 +71,13 @@ public class FpsMovement : MonoBehaviour {
         rotationVert = Mathf.Clamp(rotationVert, minimumVert, maximumVert);
 
         headCam.transform.localEulerAngles = new Vector3(rotationVert, headCam.transform.localEulerAngles.y, 0);
+    }
+
+
+    private void menu() {
+        SceneManager.LoadScene("MainMenu");
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
 
