@@ -25,6 +25,10 @@ public class RG_Maze : MonoBehaviour
         SceneManager.LoadScene("HardScene");
     }
 
+    public void prefab()
+    {
+        SceneManager.LoadScene("PrefabMaze");
+    }
 
     public void QuitGame ()
     {
