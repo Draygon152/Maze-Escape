@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MLScene1.unity
     guid: f2a00b25c2cba9b479625b12c4f130f0
   - enabled: 1
-    path: Assets/scenes/TestScene.unity
+    path: Assets/Scenes/maze scene/TestScene.unity
     guid: 606533c340cd8e341bd6a6d3e17535e4
   - enabled: 1
     path: Assets/Scenes/EasyScene.unity
@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HardScene.unity
     guid: 8f2feda113fd6944bbd15ba8ddeed490
+  - enabled: 1
+    path: Assets/Scenes/maze scene/PrefabMaze.unity
+    guid: cfb379eccd011a24ab5d1016af9e7f59
   m_configObjects: {}
