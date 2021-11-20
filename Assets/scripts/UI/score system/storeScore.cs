@@ -10,7 +10,7 @@ public class storeScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreText.GetComponent<TextMeshProUGUI>().text = $"Gem: {theScore} / 8";
+        scoreText.GetComponent<TextMeshProUGUI>().text = $"Gem: {theScore} / 16";
 
         
     
