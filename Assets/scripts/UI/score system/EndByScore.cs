@@ -7,6 +7,13 @@ public class EndByScore : MonoBehaviour
     public static int desireScore = 16;
     public int Score = 0;
     public GameObject winScene;
+    public bool scoreOk = false;
+    void Start() {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
+        
+        
+    }
 
     public void OnTriggerEnter(Collider other) {
         
@@ -17,13 +24,23 @@ public class EndByScore : MonoBehaviour
     void Update() {
         if (Score >= desireScore)
         {
-            winScene.SetActive(true);
-            Time.timeScale = 0f;
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.Confined;
+            scoreOk = true;
+            
         }
         
+        if( scoreOk)
+        {
+            reachGoal();
+        }
         
+    }
+
+    void reachGoal()
+    {
+        winScene.SetActive(true);
+        Time.timeScale = 0f;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     
