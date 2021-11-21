@@ -31,7 +31,9 @@ public class PauseMenu : MonoBehaviour
         disableCursor();
     }
 
-
+    public void ResumeGame_menu(){
+        Time.timeScale = 1f;
+    }
     public void Pause() {
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;

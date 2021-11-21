@@ -7,11 +7,10 @@ public class ScoreSystem1 : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject scoreText;
-    
+    public GameObject winScene;
+    [SerializeField] int Desire_gems = 0;
     public AudioSource collectSound;
 
-        
-        
 
 
     public void OnTriggerEnter(Collider other) {
@@ -21,7 +20,16 @@ public class ScoreSystem1 : MonoBehaviour
         storeScore.theScore += 1;
         Destroy(gameObject);
         
-
-        
     }
+
+    public void Complete_gem()
+    {
+        
+        winScene.SetActive(true);
+        Time.timeScale = 0f;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+        
+    }   
+
 }
