@@ -8,10 +8,6 @@ public class EndByScore : MonoBehaviour
     public int Score = 0;
     public GameObject winScene;
     public bool scoreOk = false;
-    void Start() {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Confined;
-    }
 
     public void OnTriggerEnter(Collider other) {
         
