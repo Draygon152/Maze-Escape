@@ -11,8 +11,6 @@ public class EndByScore : MonoBehaviour
     void Start() {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
-        
-        
     }
 
     public void OnTriggerEnter(Collider other) {
