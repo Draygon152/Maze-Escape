@@ -1,14 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class PauseMenu : MonoBehaviour
-{
-    // Start is called before the first frame update
+public class PauseMenu : MonoBehaviour {
     public static bool GameIsPaused = false;
-    
-    
     public GameObject PauseMenuUI;
-    //public GameObject helpUI;
-    // Update is called once per frame
+
+    // public GameObject helpUI;
     void Update() { 
         if(Input.GetKeyDown(KeyCode.Tab)) {
             if (GameIsPaused) {
@@ -31,9 +27,7 @@ public class PauseMenu : MonoBehaviour
         disableCursor();
     }
 
-    public void ResumeGame_menu(){
-        Time.timeScale = 1f;
-    }
+
     public void Pause() {
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
