@@ -6,30 +6,30 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/menu list/Welcome Scene.unity
+    path: Assets/Scenes/Menu Scenes/Welcome Scene.unity
     guid: 00fbbf9e46c4f5a4f9077feef2f41c95
   - enabled: 1
-    path: Assets/Scenes/menu list/MainMenu.unity
+    path: Assets/Scenes/Menu Scenes/MainMenu.unity
     guid: 444a57d2aee13464291accc10fea5b35
   - enabled: 1
-    path: Assets/Scenes/menu list/WinScene.unity
+    path: Assets/Scenes/Menu Scenes/WinScene.unity
     guid: eb5aab2a16c0ff040badf2b144827609
   - enabled: 1
-    path: Assets/Scenes/menu list/LossScene.unity
+    path: Assets/Scenes/Menu Scenes/LossScene.unity
     guid: 89611996b2369ab44a1fac35a6c2c4d9
   - enabled: 1
-    path: Assets/Scenes/MLScene1.unity
-    guid: f2a00b25c2cba9b479625b12c4f130f0
-  - enabled: 1
-    path: Assets/Scenes/maze scene/TestScene.unity
-    guid: 606533c340cd8e341bd6a6d3e17535e4
-  - enabled: 1
-    path: Assets/Scenes/EasyScene.unity
-    guid: 5083ce4f6d99dd0488670660e7d009d0
-  - enabled: 1
-    path: Assets/Scenes/HardScene.unity
-    guid: 8f2feda113fd6944bbd15ba8ddeed490
-  - enabled: 1
-    path: Assets/Scenes/maze scene/PrefabMaze.unity
+    path: Assets/Scenes/Maze Scenes/PrefabMaze.unity
     guid: cfb379eccd011a24ab5d1016af9e7f59
+  - enabled: 1
+    path: Assets/Scenes/Maze Scenes/ProceduralMaze.unity
+    guid: 606533c340cd8e341bd6a6d3e17535e4
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
