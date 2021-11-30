@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -724,16 +724,7 @@ PrefabInstance:
         Press F : Flash light
 
         Press
-        H : Close\Open help
-
-        Press:  WASD to move
-
-        Goal: Collect
-        eight Red Gems'
-      objectReference: {fileID: 0}
-    - target: {fileID: 4632343293774406781, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 486
+        H : Close\Open help'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
