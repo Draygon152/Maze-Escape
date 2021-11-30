@@ -50,7 +50,7 @@ public class UICountdown : MonoBehaviour {
         // update timeRemaining and UI timer
         // Debug.Log(timeRemaining);
         timeRemaining -= 1;
+
         gameObject.GetComponent<TextMeshProUGUI>().text = $"Time Remaining: {timeRemaining}";
     }
 }
-
