@@ -7,6 +7,6 @@ public class storeScore : MonoBehaviour {
     public static int theScore;
 
     void Update() {
-        scoreText.GetComponent<TextMeshProUGUI>().text = $"Gem: {theScore} / 16";
+        scoreText.GetComponent<TextMeshProUGUI>().text = $"Gems: {theScore} / 16";
     }
 }

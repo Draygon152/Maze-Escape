@@ -72,7 +72,7 @@ public class GameController : MonoBehaviour {
 
         scoreIncrease.Play();
         score++;
-        scoreText.text = $"Gems: {score}";
+        scoreText.text = $"Gems: {score} / 8";
         Destroy(trigger);
         
         generator.DisposeOldMaze();
