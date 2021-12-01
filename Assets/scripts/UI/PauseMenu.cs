@@ -5,6 +5,11 @@ public class PauseMenu : MonoBehaviour {
     public GameObject PauseMenuUI;
 
     // public GameObject helpUI;
+    private void Start()
+    {
+        GameIsPaused = false;
+    }
+
     void Update() { 
         if(Input.GetKeyDown(KeyCode.Tab)) {
             if (GameIsPaused) {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311915, g: 0.3807396, b: 0.35872662, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: showDebug
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4222486961407816639, guid: 4312747490bded54b97947e46165895d, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 2794002080257947959}
     - target: {fileID: 4222486961407816639, guid: 4312747490bded54b97947e46165895d, type: 3}
       propertyPath: scoreIncrease
       value: 
@@ -532,6 +536,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1734160165143411887, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
+      propertyPath: m_text
+      value: 'Gems: 0'
+      objectReference: {fileID: 0}
     - target: {fileID: 3136269819671888389, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -622,6 +630,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
+--- !u!114 &2794002080257947959 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1734160165143411887, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
+  m_PrefabInstance: {fileID: 2794002080257947958}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4632343294084945317
 PrefabInstance:
   m_ObjectHideFlags: 0

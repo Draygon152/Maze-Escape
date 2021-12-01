@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 
 [RequireComponent(typeof(MazeConstructor))]
@@ -19,7 +20,10 @@ public class GameController : MonoBehaviour {
     private uint cols = 15;
 
     // Stores the number of goals that have been collected
-    private uint score = 0;
+    public uint score = 0;
+
+    // Text object that displays the score and updates when a goal is reached
+    public TextMeshProUGUI scoreText;
 
     bool goalReached = false;
 
@@ -68,6 +72,7 @@ public class GameController : MonoBehaviour {
 
         scoreIncrease.Play();
         score++;
+        scoreText.text = $"Gems: {score}";
         Destroy(trigger);
         
         generator.DisposeOldMaze();
