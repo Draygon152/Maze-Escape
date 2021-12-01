@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.38397205, g: 0.6109052, b: 0.8074104, a: 1}
+  m_IndirectSpecularColor: {r: 0.3839721, g: 0.61090606, b: 0.807413, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1567,8 +1567,52 @@ PrefabInstance:
         Press WASD to move'
       objectReference: {fileID: 0}
     - target: {fileID: 4632343293774406781, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343293774406781, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343293774406781, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343293774406781, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343293774406781, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 506
+      value: -93
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343293774406781, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343294997179059, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343294997179059, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343294997179059, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 742
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343294997179059, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 417
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343294997179059, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -371
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343294997179059, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -208.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
@@ -7786,6 +7830,18 @@ PrefabInstance:
     - target: {fileID: 3136269819671888393, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
       propertyPath: m_Name
       value: UIcountdown
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600284527723951635, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600284527723951635, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600284527723951635, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -64
       objectReference: {fileID: 0}
     - target: {fileID: 4601416594746216738, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
       propertyPath: m_IsActive

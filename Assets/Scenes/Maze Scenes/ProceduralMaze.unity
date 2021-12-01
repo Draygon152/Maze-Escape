@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311915, g: 0.3807396, b: 0.35872662, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -632,6 +632,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIcountdown
       objectReference: {fileID: 0}
+    - target: {fileID: 3600284527723951635, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600284527723951635, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600284527723951635, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -64
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
 --- !u!114 &2794002080257947959 stripped
@@ -755,8 +767,28 @@ PrefabInstance:
         eight Red Gems'
       objectReference: {fileID: 0}
     - target: {fileID: 4632343293774406781, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343293774406781, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343293774406781, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343293774406781, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343293774406781, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 486
+      value: -102
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343293774406781, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
