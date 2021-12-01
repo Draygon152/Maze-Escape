@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: showDebug
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4222486961407816638, guid: 4312747490bded54b97947e46165895d, type: 3}
+      propertyPath: goalTrigger
+      value: 
+      objectReference: {fileID: 393621040517292905, guid: f8eecc456d44b4a03972f30dac1c2a62, type: 3}
     - target: {fileID: 4222486961407816639, guid: 4312747490bded54b97947e46165895d, type: 3}
       propertyPath: scoreText
       value: 

@@ -9,6 +9,7 @@ public class MazeConstructor : MonoBehaviour
     [SerializeField] private Material floorMat;
     [SerializeField] private Material wallMat;
     [SerializeField] private Material goalMat;
+    [SerializeField] private GameObject goalTrigger;
 
     // Variables to store data and mesh generators
     private MazeDataGenerator dataGenerator;
@@ -157,13 +158,13 @@ public class MazeConstructor : MonoBehaviour
 
     // Callback argument takes a function to call when something enters trigger volume
     private void PlaceGoalTrigger(TriggerEventHandler callback) {
-        GameObject go = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        go.transform.position = new Vector3(goalCol * hallWidth, .5f, goalRow * hallWidth);
+        GameObject go = Instantiate(goalTrigger);
+        go.transform.position = new Vector3(goalCol * hallWidth, 1, goalRow * hallWidth);
         go.name = "Goal Trigger";
         go.tag = "Generated";
 
         go.GetComponent<BoxCollider>().isTrigger = true;
-        go.GetComponent<MeshRenderer>().sharedMaterial = goalMat;
+        //go.GetComponent<MeshRenderer>().sharedMaterial = goalMat;
 
         TriggerEventRouter tc = go.AddComponent<TriggerEventRouter>();
         tc.callback = callback;
