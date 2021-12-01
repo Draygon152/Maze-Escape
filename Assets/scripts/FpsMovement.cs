@@ -37,9 +37,11 @@ public class FpsMovement : MonoBehaviour {
 
 
     void Update() {
-        MoveCharacter();
-        RotateCharacter();
-        RotateCamera();
+        if (Time.timeScale == 1f) {
+            MoveCharacter();
+            RotateCharacter();
+            RotateCamera();
+        }
     }
 
 
