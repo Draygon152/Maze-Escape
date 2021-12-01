@@ -273,6 +273,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8524550262688203834, guid: ac66f19b344bbb04f9e4e6ff90588425, type: 3}
   m_PrefabInstance: {fileID: 644596040}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &41996324 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8524550262688203835, guid: ac66f19b344bbb04f9e4e6ff90588425, type: 3}
+  m_PrefabInstance: {fileID: 644596040}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41996322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c1c7a3a16de9ce48b5d695edf94121a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &188059033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1869,7 +1880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -653, y: 293}
+  m_AnchoredPosition: {x: -653, y: 267}
   m_SizeDelta: {x: 301.905, y: 295.175}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &804301244
@@ -2172,7 +2183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2694,8 +2705,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RG_Maze, Assembly-CSharp
+      - m_Target: {fileID: 41996324}
+        m_TargetAssemblyTypeName: MazeSelection, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -3054,7 +3065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
