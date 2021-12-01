@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3839721, g: 0.61090606, b: 0.807413, a: 1}
+  m_IndirectSpecularColor: {r: 0.38397205, g: 0.6109052, b: 0.8074104, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7697,7 +7697,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1734160165143411887, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
       propertyPath: m_text
-      value: 'Gem: '
+      value: 'Gems: '
       objectReference: {fileID: 0}
     - target: {fileID: 3136269819671888389, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
       propertyPath: m_Pivot.x
