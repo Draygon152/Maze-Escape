@@ -1562,7 +1562,13 @@ PrefabInstance:
         Press F : Flash light
 
         Press
-        H : Close\Open help'
+        H : Close\Open help
+
+        Press WASD to move'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632343293774406781, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 506
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bf86341084527a4e94eefb06a0b7a88, type: 3}
