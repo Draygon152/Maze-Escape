@@ -6968,7 +6968,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 94, y: -31}
+  m_AnchoredPosition: {x: 94, y: -34.9}
   m_SizeDelta: {x: 179.2939, y: 53.7247}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &1329106079
@@ -6991,7 +6991,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Gem: 0 / 16'
+  m_text: 'Gem: 0/ 16'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7689,6 +7689,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1734160165143411887, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
+      propertyPath: m_text
+      value: 'Gem: '
+      objectReference: {fileID: 0}
     - target: {fileID: 3136269819671888389, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -7776,6 +7780,10 @@ PrefabInstance:
     - target: {fileID: 3136269819671888393, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
       propertyPath: m_Name
       value: UIcountdown
+      objectReference: {fileID: 0}
+    - target: {fileID: 4601416594746216738, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ac16feabe3a2a241885c24fdf6b7bf0, type: 3}
