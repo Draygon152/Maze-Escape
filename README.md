@@ -1,3 +1,3 @@
-# Scaffold-Project-Group-10
+# Maze Escape
 
-###### Repository for scaffold project that's veered wildly off-course, by Group 10
+###### Repository for VGDC scaffold project that's veered wildly off-course, created by Group 10
